@@ -31,8 +31,6 @@ const scenarios = [
 
 type Tab = "vocab" | "interview" | "grammar" | "scenarios";
 
-const S: React.CSSProperties = {};
-
 export default function App() {
   const [tab, setTab] = useState<Tab>("vocab");
   const [answers, setAnswers] = useState<string[]>(interviews.map(() => ""));
